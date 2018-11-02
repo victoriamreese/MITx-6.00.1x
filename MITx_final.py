@@ -128,7 +128,7 @@ class Bag(Container):
     def count(self, e):
         """ assumes e is hashable
             Returns the number of times e occurs in self. """
-        if self.vals[e] != 0:
+        if self.vals[e]:
             return self.vals[e]
         else:
             return None
